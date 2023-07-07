@@ -1,0 +1,19 @@
+.SECT .TEXT
+  ADD SI, (x)
+  ADD AX, SI
+  MUL AX
+  MOV BX, AX
+  MUL AX
+  MOV CX, 2
+  MUL CX
+  MOV CX, AX
+  MOV AX, BX
+  MOV DX, 3
+  MUL DX
+  SUB CX, AX
+  MOV AX, CX
+  ADD AX, SI
+  SUB AX, 5
+.SECT .DATA
+x:  .WORD 7
+.SECT .BSS
